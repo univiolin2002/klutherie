@@ -214,7 +214,7 @@ for i, m in enumerate(makers):
   <div class="profile">
     <div>
       <div class="profile__plate"><img src="../images/makers/{m['photo']}-full.jpg" alt="{E(m['name'])}"></div>
-      <p class="caption">Photograph courtesy of the maker</p>
+      <p class="caption">{'Photograph to follow' if m.get('photo_pending') else 'Photograph courtesy of the maker'}</p>
     </div>
     <div class="profile__body">
       <span class="label">{E(m['kind'].replace('and', '&amp;'))}</span>
