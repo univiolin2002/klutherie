@@ -36,9 +36,9 @@ def js(T):
       var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
       b.disabled = true; b.textContent = {T['f_sending']!r};
       fetch(jf.action, {{ method: 'POST', body: new FormData(jf), headers: {{ 'Accept': 'application/json' }} }})
-        .then(function (r) {{ return r.ok ? r : Promise.reject(r); }})
+        .then(function (r) {{ return r.ok ? r : r.json().then(function (j) {{ throw new Error(j && (j.error || (j.errors && j.errors[0] && j.errors[0].message)) || r.status); }}); }})
         .then(function () {{ st.hidden = false; st.textContent = {T['f_ok']!r}; jf.reset(); b.textContent = {T['f_sent']!r}; }})
-        .catch(function () {{ st.hidden = false; st.textContent = {T['f_err']!r}; b.disabled = false; b.textContent = {T['f_send']!r}; }});
+        .catch(function (err) {{ st.hidden = false; st.textContent = {T['f_err']!r} + (err && err.message ? ' (' + err.message + ')' : ''); b.disabled = false; b.textContent = {T['f_send']!r}; }});
     }});
   }}
   var filters = document.getElementById('filters');
@@ -403,7 +403,7 @@ class Site:
       <legend>{T['f_photo']}</legend>
       <div class="field">
         <label for="photo">{T['f_photo_l']}</label>
-        <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
+        <input type="url" id="photo" name="photo_link" placeholder="https://drive.google.com/…">
         <p class="hint">{T['f_photo_hint']}</p>
       </div>
       <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> {T['f_rights']}</label></div></div>

@@ -69,9 +69,9 @@
     <fieldset>
       <legend>사진</legend>
       <div class="field">
-        <label for="photo">본인 사진, 되도록 작업대에서 찍은 것</label>
-        <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
-        <p class="hint">JPG 또는 PNG, 긴 변 2000픽셀 이상이면 좋습니다. 세로 사진이 가장 잘 맞습니다. 파일이 너무 크면 비고란에 적어 주시면 답장드릴 때 따로 요청하겠습니다.</p>
+        <label for="photo">본인 사진 링크, 되도록 작업대에서 찍은 것</label>
+        <input type="url" id="photo" name="photo_link" placeholder="https://drive.google.com/…">
+        <p class="hint">공유 링크(구글 드라이브, 드롭박스, 위트랜스퍼, 또는 인스타그램 게시물)를 붙여 넣어 주세요. JPG 또는 PNG, 긴 변 2000픽셀 이상이면 좋고 세로 사진이 가장 잘 맞습니다. 링크가 없으면 비워 두셔도 됩니다. 답장드릴 때 사진을 따로 요청하겠습니다.</p>
       </div>
       <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> 이 사진은 제 것이거나 촬영자의 허락을 받았으며, “사진 — 제작자 제공” 표기로 klutherie.com에 게시해도 됩니다.</label></div></div>
     </fieldset>
@@ -123,9 +123,9 @@
       var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
       b.disabled = true; b.textContent = '보내는 중…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
-        .then(function (r) { return r.ok ? r : Promise.reject(r); })
+        .then(function (r) { return r.ok ? r : r.json().then(function (j) { throw new Error(j && (j.error || (j.errors && j.errors[0] && j.errors[0].message)) || r.status); }); })
         .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
-        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. 잠시 후 다시 시도해 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+        .catch(function (err) { st.hidden = false; st.textContent = '문제가 생겼습니다. 잠시 후 다시 시도해 주세요.' + (err && err.message ? ' (' + err.message + ')' : ''); b.disabled = false; b.textContent = '신청서 보내기'; });
     });
   }
   var filters = document.getElementById('filters');
