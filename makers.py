@@ -66,6 +66,7 @@ MAKERS = [
     },
     {
         "slug": "dongpil-im",
+        "instagram": "luthier_im",
         "name": "Dongpil Im",
         "sort": "Im",
         "city": "Cremona",
