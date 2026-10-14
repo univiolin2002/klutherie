@@ -299,6 +299,24 @@ MAKERS = [
 
 NEWS = [
     {
+        "slug": "la-forma-del-suono-2026",
+        "date": "2026-02",
+        "date_text": "February 2026",
+        "title": "Fifteen Korean makers at La Forma del Suono, Los Angeles",
+        "summary": "An exhibition of contemporary instruments and bows at LA Fine Violins, 7–10 February 2026, showed work by forty-one makers from Europe, Asia and North America — fifteen of them Korean.",
+        "image": ("https://www.laviolinshop.com/cdn/shop/articles/La_Forma_Del_Suono_2026_-Banner.png?v=1770234101", "La Forma del Suono, LA Fine Violins, February 2026. Image courtesy of LA Violin Shop."),
+        "makers": ["anna-arietti", "hee-jae-choi", "kwanghoon-choi", "jake-jiwon-han", "dongpil-im", "caterina-rota-kim", "min-sung-kim", "tae-yeong-kim", "kwanghoon-lee", "paul-lee", "hyunjung-park", "jihwan-park", "stella-eunbyul-yoo", "yongmin-na", "yongje-song"],
+        "body": [
+            "La Forma del Suono — the shape of sound — was an exhibition of contemporary violins, violas, cellos and bows held at LA Fine Violins, 225 South Olive Street in downtown Los Angeles, from 7 to 10 February 2026. It marked the opening of the shop’s new space a short walk from the Colburn School and the Music Center, and brought together work by twenty-three instrument makers and eighteen bow makers for players to see, handle and play in one room.",
+            "Fifteen of the makers listed on K-Lutherie took part. Among the instrument makers were Anna Arietti, Hee Jae Choi, Kwanghoon Choi, Jake Jiwon Han, Dongpil Im, Caterina Rota Kim, Min Sung Kim, Tae Yeong Kim, Kwanghoon Lee, Paul Lee, Hyunjung Park, Jihwan Park and Stella Eunbyul Yoo; among the bow makers, Yongmin Na, Yongje Song and, again, Paul Lee. They showed alongside makers such as Hrachya Galstyan, Baptiste Juguera, Ada Quaranta, Giacomo Rocca and Wanna Zambelli, and archetiers including Emmanuel Bégin, Victor Bernard, Emmanuel Carlier, Guillaume Kessler, Virginia Morricone and Stephen Salchow.",
+            "The exhibition opened at ten each morning, with trial sessions by reservation. Two evenings were given to invitation-only receptions, and on 8 February a salon concert was played on instruments and bows from the exhibition.",
+            "It was the largest gathering of Korean makers’ work shown together in North America to date, and one of the first occasions on which many of them exhibited side by side.",
+        ],
+        "sources": [
+            ("LA Violin Shop — La Forma del Suono 2026", "https://www.laviolinshop.com/blogs/resources/la-forma-del-suono-2026"),
+        ],
+    },
+    {
         "slug": "jihwan-park-wieniawski-jury-2025",
         "date": "2025-05",
         "date_text": "May 2025",

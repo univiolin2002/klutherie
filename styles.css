@@ -181,6 +181,10 @@ h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(22
 .article .label { display: block; margin-bottom: 14px; }
 .article h1 { margin-bottom: 18px; }
 .article__summary { font-family: var(--serif); font-size: clamp(18px, 2.2vw, 21px); line-height: 1.6; color: var(--muted); margin: 0 0 32px; }
+.article__fig { margin: 0 0 32px; }
+.article__fig .plate { background: var(--plate); }
+.article__fig img { display: block; width: 100%; height: auto; }
+.article__fig figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
 .article__body p { font-size: 17px; line-height: 1.8; margin: 0 0 20px; }
 .article__links { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
 .article__links a { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }

@@ -334,11 +334,16 @@ class Site:
             paras = "".join(f"<p>{E(p)}</p>" for p in n["body"])
             related = ", ".join(f'<a href="../makers/{s}.html">{E(by_slug[s]["display"])}</a>' for s in n["makers"] if s in by_slug)
             sources = ", ".join(f'<a href="{u}">{E(t)}</a>' for t, u in n.get("sources", []))
+            fig = ""
+            if n.get("image"):
+                u, cap = n["image"]
+                fig = f'<figure class="article__fig"><div class="plate"><img src="{u}" alt="" loading="lazy"></div><figcaption>{E(n.get("image_caption", cap))}</figcaption></figure>'
             body = f"""<div class="wrap">
   <article class="article">
     <span class="label">{E(n['date_text'])}</span>
     <h1>{E(n['title'])}</h1>
     <p class="article__summary">{E(n['summary'])}</p>
+    {fig}
     <div class="article__body">{paras}</div>
     <div class="article__links">
       {f'<p>{T["related_makers"]}: {related}</p>' if related else ''}
