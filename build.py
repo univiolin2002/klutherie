@@ -94,7 +94,7 @@ def page(title, desc, body, current=None, depth=0):
     </div>
     <div class="foot__col">
       <strong>Contact</strong>
-      hello@klutherie.com<br>
+      owensparkley@gmail.com<br>
       <a href="{p}about.html#listing">Listing a maker or dealer</a>
     </div>
     <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
@@ -254,7 +254,7 @@ body = f"""<div class="wrap">
   <div class="rows">{rows}</div>
   <section class="split" style="margin-top:48px">
     <span class="label">Listing</span>
-    <div class="split__body"><p>Dealers who carry instruments or bows by a Korean maker are welcome to be listed. Write to hello@klutherie.com with the shop name, city, website and the makers carried.</p></div>
+    <div class="split__body"><p>Dealers who carry instruments or bows by a Korean maker are welcome to be listed. Write to owensparkley@gmail.com with the shop name, city, website and the makers carried.</p></div>
   </section>
 </div>"""
 write("dealers.html", page("Dealers — K-Lutherie", "Shops and ateliers that carry work by Korean makers.", body, "dealers.html"))
@@ -314,7 +314,7 @@ body = """<div class="wrap">
   <section class="split" id="listing">
     <span class="label">Being listed</span>
     <div class="split__body">
-      <p>Makers of Korean origin who make or restore bowed stringed instruments or bows are welcome to be listed, at no cost. Write to hello@klutherie.com with a photograph of yourself at work, a short biography, your city, what you make, and the dealers who carry your work.</p>
+      <p>Makers of Korean origin who make or restore bowed stringed instruments or bows are welcome to be listed, at no cost. Write to owensparkley@gmail.com with a photograph of yourself at work, a short biography, your city, what you make, and the dealers who carry your work.</p>
       <p>Dealers who carry a listed maker, or a maker not yet listed, can write to the same address.</p>
     </div>
   </section>
