@@ -90,7 +90,7 @@ def page(title, desc, body, current=None, depth=0):
     <div class="foot__col">
       <strong>Follow</strong>
       <a href="https://www.instagram.com/klutherie">Instagram</a><br>
-      <a href="https://www.facebook.com/klutherie">Facebook</a>
+      <a href="https://www.facebook.com/profile.php?id=61581113504125">Facebook</a>
     </div>
     <div class="foot__col">
       <strong>Contact</strong>
@@ -329,7 +329,7 @@ body = """<div class="wrap">
   <section class="split">
     <span class="label">Follow</span>
     <div class="split__body">
-      <p><a href="https://www.instagram.com/klutherie">Instagram @klutherie</a><br><a href="https://www.facebook.com/klutherie">Facebook /klutherie</a></p>
+      <p><a href="https://www.instagram.com/klutherie">Instagram @klutherie</a><br><a href="https://www.facebook.com/profile.php?id=61581113504125">Facebook /klutherie</a></p>
     </div>
   </section>
 </div>"""
