@@ -177,7 +177,7 @@ MAKERS = [
         "kind": "bows",
         "photo": "na-yongmin",
         "photo_small": True,
-        "bio": "From Seongnam, Korea, Yongmin Na trained first in instrument repair and making before turning to bows. He continued his studies in France as assistant to the archetier Gilles Duhaut. His bows have been recognised at the 2014 Mittenwald and VSA competitions, with a Merit Prize at the 2016 China International Violin Making Competition and fourth place at the 2018 Mittenwald bow-making competition. At the 2024 VSA competition he received Certificates of Merit for his violin, viola and cello bows. He now works in Sejong, Korea.",
+        "bio": "From Seongnam, Korea, Yongmin Na trained first in instrument repair and making before turning to bows. He continued his studies in France as assistant to the archetier Gilles Duhaut. His bows have been recognised at the 2014 Mittenwald and VSA competitions, with a Merit Prize at the 2016 China International Violin Making Competition and fourth place at the 2018 Mittenwald bow-making competition. At the 2024 VSA competition in Indianapolis he received Certificates of Merit for his violin, viola and cello bows. He now works in Sejong, Korea.",
         "dealers": [LAVS],
         "work": [("Violin bow, 2025", "https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_Bow_by_Yongmin_Na_Sejong_2025_bow_2400x2400_e9532007-b1cf-46a8-b42c-1194f103eea9.jpg")],
     },
