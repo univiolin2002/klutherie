@@ -64,7 +64,7 @@ T = {
     "about_p3b": ", or write to owensparkley@gmail.com with a photograph of yourself at work, a short biography, your city, what you make, and the dealers who carry your work.",
     "about_p4": "Dealers who carry a listed maker, or a maker not yet listed, can write to the same address.",
     "who_runs": "Who runs it",
-    "about_p5": "K-Lutherie was started in 2026 by Owen Hojoon Lee, who has worked in the violin trade in Los Angeles since 2002 and is the founder of LA Violin Shop. It is an independent project with no commercial purpose: makers are listed on their merits, and dealers are listed on the same terms whoever they are.",
+    "about_p5": "K-Lutherie was started in 2026 by Owen Hojoon Lee, who has worked in the violin trade in Los Angeles since 2002 and is the founder of LA Violin Shop. It is an independent project with no commercial purpose. Its aim is a network in which Korean makers know one another, grow together, and share the knowledge and experience that make for better instruments and better sound. Dealers are listed on the same terms whoever they are.",
     "follow": "Follow",
     "join_title": "Join — K-Lutherie",
     "join_desc": "Apply to be listed on K-Lutherie: makers and restorers of Korean origin, anywhere in the world.",
