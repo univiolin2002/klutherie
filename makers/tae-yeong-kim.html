@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tae Yeong Kim — K-Lutherie</title>
+<meta name="description" content="Tae Yeong Kim came to violin making through work at an instrument company in Korea, which led him to Cremona for three years of training. He then work…">
+<meta property="og:title" content="Tae Yeong Kim — K-Lutherie">
+<meta property="og:description" content="Tae Yeong Kim came to violin making through work at an instrument company in Korea, which led him to Cremona for three years of training. He then work…">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a></nav>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="profile">
+    <div>
+      <div class="profile__plate"><img src="../images/makers/kim-taeyeong-full.jpg" alt="Tae Yeong Kim"></div>
+      <p class="caption">Photograph courtesy of the maker</p>
+    </div>
+    <div class="profile__body">
+      <span class="label">instruments</span>
+      <h1>Tae Yeong Kim</h1>
+      <p class="profile__meta">Seoul, Korea<br>Violins; restoration</p>
+      <p class="profile__bio">Tae Yeong Kim came to violin making through work at an instrument company in Korea, which led him to Cremona for three years of training. He then worked in Brescia with Ioannis Apostolou, taking part in competitions and working alongside leading makers. He is now based in Seoul as a head repairer, specialising in restoration and bringing restoration techniques into the instruments he makes.</p>
+      <div class="facts rows">
+        <div class="row"><div class="row__k">Works in</div><div class="row__v">Seoul</div></div>
+        <div class="row"><div class="row__k">Makes</div><div class="row__v">Violins; restoration</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="section__head"><h2>Work</h2></div>
+    <div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_by_Tae_Yeong_Kim_Seoul_2025_front_2400x2400_12f95a27-8aa4-4717-b299-9eca29ae7a8e.jpg" alt="Violin, Seoul 2025" loading="lazy"></div><figcaption>Violin, Seoul 2025</figcaption></figure></div>
+  </section>
+  <section class="section">
+    <div class="section__head"><h2>Dealers</h2></div>
+    <div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div>
+  </section>
+  <nav class="pager" aria-label="Makers">
+    <span><a href="min-sung-kim.html">&lsaquo; Min Sung Kim</a></span>
+    <span><a href="kwanghoon-lee.html">Kwanghoon Lee &rsaquo;</a></span>
+  </nav>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">K<span>&middot;</span>Lutherie</div>
+      <p class="foot__tag">Korean makers of stringed instruments and bows, wherever they work.</p>
+    </div>
+    <div class="foot__col">
+      <strong>Follow</strong>
+      <a href="https://www.instagram.com/klutherie">Instagram</a><br>
+      <a href="https://www.facebook.com/klutherie">Facebook</a>
+    </div>
+    <div class="foot__col">
+      <strong>Contact</strong>
+      hello@klutherie.com<br>
+      <a href="../about.html#listing">Listing a maker or dealer</a>
+    </div>
+    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (btn && nav && slot) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
+      else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var filters = document.getElementById('filters');
+  if (filters) {
+    var state = { place: 'all', kind: 'all' };
+    var cards = document.querySelectorAll('[data-place]');
+    var empty = document.getElementById('empty');
+    function apply() {
+      var n = 0;
+      cards.forEach(function (c) {
+        var ok = (state.place === 'all' || c.getAttribute('data-place') === state.place) &&
+                 (state.kind === 'all' || c.getAttribute('data-kind').indexOf(state.kind) !== -1);
+        c.hidden = !ok; if (ok) n++;
+      });
+      if (empty) empty.hidden = n > 0;
+    }
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      var g = b.getAttribute('data-group'); state[g] = b.getAttribute('data-value');
+      filters.querySelectorAll('button[data-group="' + g + '"]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+})();
+</script>
+</body>
+</html>

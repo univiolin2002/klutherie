@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dealers — K-Lutherie</title>
+<meta name="description" content="Shops and ateliers that carry work by Korean makers.">
+<meta property="og:title" content="Dealers — K-Lutherie">
+<meta property="og:description" content="Shops and ateliers that carry work by Korean makers.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html" aria-current="page">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a></nav>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="lede">
+    <div class="lede__text"><h1>Dealers</h1></div>
+    <div class="lede__aside"><p>Shops and ateliers that carry work by the makers listed here. Listing is a standing relationship, not current stock; contact the dealer for what is available.</p></div>
+  </div>
+  <div class="rows"><article class="row">
+  <div class="row__k">Los Angeles</div>
+  <div><h3 class="row__t"><a href="https://www.laviolinshop.com">LA Violin Shop</a></h3><p class="row__d"><a href="makers/anna-arietti.html">Anna Arietti</a>, <a href="makers/hee-jae-choi.html">Hee Jae Choi</a>, <a href="makers/jake-jiwon-han.html">Jake Jiwon Han</a>, <a href="makers/dongpil-im.html">Dongpil Im</a>, <a href="makers/caterina-rota-kim.html">Caterina Rota Kim</a>, <a href="makers/min-sung-kim.html">Min Sung Kim</a>, <a href="makers/tae-yeong-kim.html">Tae Yeong Kim</a>, <a href="makers/kwanghoon-lee.html">Kwanghoon Lee</a>, <a href="makers/paul-lee.html">Paul (K. P.) Lee</a>, <a href="makers/yongmin-na.html">Yongmin Na</a>, <a href="makers/hyunjung-park.html">Hyunjung Park</a>, <a href="makers/jihwan-park.html">Jihwan Park</a>, <a href="makers/san-ha-park.html">San-ha Park</a>, <a href="makers/yongje-song.html">Yongje Song</a>, <a href="makers/stella-eunbyul-yoo.html">Stella Eunbyul Yoo</a></p></div>
+</article></div>
+  <section class="split" style="margin-top:48px">
+    <span class="label">Listing</span>
+    <div class="split__body"><p>Dealers who carry instruments or bows by a Korean maker are welcome to be listed. Write to hello@klutherie.com with the shop name, city, website and the makers carried.</p></div>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">K<span>&middot;</span>Lutherie</div>
+      <p class="foot__tag">Korean makers of stringed instruments and bows, wherever they work.</p>
+    </div>
+    <div class="foot__col">
+      <strong>Follow</strong>
+      <a href="https://www.instagram.com/klutherie">Instagram</a><br>
+      <a href="https://www.facebook.com/klutherie">Facebook</a>
+    </div>
+    <div class="foot__col">
+      <strong>Contact</strong>
+      hello@klutherie.com<br>
+      <a href="about.html#listing">Listing a maker or dealer</a>
+    </div>
+    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (btn && nav && slot) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
+      else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var filters = document.getElementById('filters');
+  if (filters) {
+    var state = { place: 'all', kind: 'all' };
+    var cards = document.querySelectorAll('[data-place]');
+    var empty = document.getElementById('empty');
+    function apply() {
+      var n = 0;
+      cards.forEach(function (c) {
+        var ok = (state.place === 'all' || c.getAttribute('data-place') === state.place) &&
+                 (state.kind === 'all' || c.getAttribute('data-kind').indexOf(state.kind) !== -1);
+        c.hidden = !ok; if (ok) n++;
+      });
+      if (empty) empty.hidden = n > 0;
+    }
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      var g = b.getAttribute('data-group'); state[g] = b.getAttribute('data-value');
+      filters.querySelectorAll('button[data-group="' + g + '"]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+})();
+</script>
+</body>
+</html>

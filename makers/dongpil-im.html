@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dongpil Im — K-Lutherie</title>
+<meta name="description" content="Born in Korea in 1979, Dongpil Im graduated from the International Violin Making School of Cremona in 2007 under Lorenzo Marchi and took a further deg…">
+<meta property="og:title" content="Dongpil Im — K-Lutherie">
+<meta property="og:description" content="Born in Korea in 1979, Dongpil Im graduated from the International Violin Making School of Cremona in 2007 under Lorenzo Marchi and took a further deg…">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a></nav>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="profile">
+    <div>
+      <div class="profile__plate"><img src="../images/makers/im-dongpil-full.jpg" alt="Dongpil Im"></div>
+      <p class="caption">Photograph courtesy of the maker</p>
+    </div>
+    <div class="profile__body">
+      <span class="label">instruments</span>
+      <h1>Dongpil Im</h1>
+      <p class="profile__meta">Cremona, Italy<br>Violins, violas and cellos</p>
+      <p class="profile__bio">Born in Korea in 1979, Dongpil Im graduated from the International Violin Making School of Cremona in 2007 under Lorenzo Marchi and took a further degree in 2008 with Silvio Levaggi. He has run his own workshop at Via Ettore Sacchi 12, Cremona, since 2010. His work has been recognised at national and international competitions, including a bronze medal in 2008 and a gold medal in 2010 at Pisogne, and top placements for his cellos in Mittenwald, Paris and Cremona.</p>
+      <div class="facts rows">
+        <div class="row"><div class="row__k">Works in</div><div class="row__v">Cremona</div></div>
+        <div class="row"><div class="row__k">Makes</div><div class="row__v">Violins, violas and cellos</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="section__head"><h2>Work</h2></div>
+    <div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Im_Dong_Pil_violin_front_2400x2400_copy_20251101145100_2ea1042c-565f-4ca1-9952-4b5bbda5b34f.jpg" alt="Violin, Cremona 2022" loading="lazy"></div><figcaption>Violin, Cremona 2022</figcaption></figure><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Dongpil_Im_front_1200x1200_9d3a131e-adda-4b12-8496-c344b06f8a6e.jpg" alt="Cello, Cremona 2022" loading="lazy"></div><figcaption>Cello, Cremona 2022</figcaption></figure></div>
+  </section>
+  <section class="section">
+    <div class="section__head"><h2>Dealers</h2></div>
+    <div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div>
+  </section>
+  <nav class="pager" aria-label="Makers">
+    <span><a href="jake-jiwon-han.html">&lsaquo; Jake Jiwon Han</a></span>
+    <span><a href="gawang-jung.html">Gawang Jung &rsaquo;</a></span>
+  </nav>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">K<span>&middot;</span>Lutherie</div>
+      <p class="foot__tag">Korean makers of stringed instruments and bows, wherever they work.</p>
+    </div>
+    <div class="foot__col">
+      <strong>Follow</strong>
+      <a href="https://www.instagram.com/klutherie">Instagram</a><br>
+      <a href="https://www.facebook.com/klutherie">Facebook</a>
+    </div>
+    <div class="foot__col">
+      <strong>Contact</strong>
+      hello@klutherie.com<br>
+      <a href="../about.html#listing">Listing a maker or dealer</a>
+    </div>
+    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (btn && nav && slot) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
+      else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var filters = document.getElementById('filters');
+  if (filters) {
+    var state = { place: 'all', kind: 'all' };
+    var cards = document.querySelectorAll('[data-place]');
+    var empty = document.getElementById('empty');
+    function apply() {
+      var n = 0;
+      cards.forEach(function (c) {
+        var ok = (state.place === 'all' || c.getAttribute('data-place') === state.place) &&
+                 (state.kind === 'all' || c.getAttribute('data-kind').indexOf(state.kind) !== -1);
+        c.hidden = !ok; if (ok) n++;
+      });
+      if (empty) empty.hidden = n > 0;
+    }
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      var g = b.getAttribute('data-group'); state[g] = b.getAttribute('data-value');
+      filters.querySelectorAll('button[data-group="' + g + '"]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+})();
+</script>
+</body>
+</html>
