@@ -8,17 +8,19 @@
 <meta property="og:title" content="K-Lutherie">
 <meta property="og:description" content="A register of Korean makers of stringed instruments and bows, wherever they work.">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/index.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/index.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html">Join</a><a class="lang" href="ko/index.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="ko/index.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -28,9 +30,8 @@
     <div class="lede__text"><h1>Korean makers of stringed instruments and bows, wherever they work.</h1></div>
     <div class="lede__aside"><p>K-Lutherie is a register of luthiers and archetiers of Korean origin: who they are, where they work, what they make, and where their instruments can be found.</p></div>
   </div>
-
   <section class="section" style="padding-top:0">
-    <div class="section__head"><h2>Makers</h2><a class="more" href="makers.html">All makers &rsaquo;</a></div>
+    <div class="section__head"><h2>Makers</h2><a class="more" href="makers.html">All makers ›</a></div>
     <div class="grid grid--6">
 <article class="maker" data-place="Cremona" data-kind="instruments">
   <a href="makers/anna-arietti.html">
@@ -167,14 +168,12 @@
 </article>
     </div>
   </section>
-
   <section class="statement">
     <span class="label">About</span>
     <div><p>Korean luthiers now work in Cremona, Seoul, Los Angeles and beyond, winning medals at the Triennale and the VSA and sitting on international juries. Their work is known to the players who own it and the dealers who sell it, and to few others. This site puts them in one place.</p></div>
   </section>
-
   <section class="section">
-    <div class="section__head"><h2>News &amp; Events</h2><a class="more" href="news.html">All &rsaquo;</a></div>
+    <div class="section__head"><h2>News & Events</h2><a class="more" href="news.html">All ›</a></div>
     <div class="rows">
 <article class="row">
   <div class="row__k">May 2025</div>
@@ -200,7 +199,7 @@
       owensparkley@gmail.com<br>
       <a href="join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -220,12 +219,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

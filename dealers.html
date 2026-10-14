@@ -8,17 +8,19 @@
 <meta property="og:title" content="Dealers — K-Lutherie">
 <meta property="og:description" content="Shops and ateliers that carry work by Korean makers.">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/dealers.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/dealers.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html" aria-current="page">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html" aria-current="page">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html">Join</a><a class="lang" href="ko/dealers.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="ko/dealers.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -54,7 +56,7 @@
       owensparkley@gmail.com<br>
       <a href="join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -74,12 +76,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

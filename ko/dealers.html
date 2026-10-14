@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>딜러 — K-Lutherie</title>
+<meta name="description" content="한국 제작자의 악기를 취급하는 상점과 공방.">
+<meta property="og:title" content="딜러 — K-Lutherie">
+<meta property="og:description" content="한국 제작자의 악기를 취급하는 상점과 공방.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/dealers.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/dealers.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lang-ko">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">제작자</a><a href="dealers.html" aria-current="page">딜러</a><a href="news.html">소식</a><a href="about.html">소개</a><a href="join.html">등록 신청</a><a class="lang" href="../dealers.html" hreflang="en" lang="en">English</a></nav>
+    <div class="masthead__right"><a class="lang" href="../dealers.html" hreflang="en" lang="en">English</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>메뉴</button></div>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="lede">
+    <div class="lede__text"><h1>딜러</h1></div>
+    <div class="lede__aside"><p>여기 실린 제작자들의 작품을 취급하는 상점과 공방입니다. 현재 재고가 아니라 지속적인 거래 관계를 뜻하며, 구입 가능한 악기는 딜러에게 직접 문의하세요.</p></div>
+  </div>
+  <div class="rows"><article class="row">
+  <div class="row__k">로스앤젤레스</div>
+  <div><h3 class="row__t"><a href="https://www.laviolinshop.com">LA Violin Shop</a></h3><p class="row__d"><a href="makers/anna-arietti.html">안아영 Anna Arietti</a>, <a href="makers/hee-jae-choi.html">최희재 Hee Jae Choi</a>, <a href="makers/jake-jiwon-han.html">한지원 Jake Jiwon Han</a>, <a href="makers/dongpil-im.html">임동필 Dongpil Im</a>, <a href="makers/caterina-rota-kim.html">김현정 Caterina Rota Kim</a>, <a href="makers/min-sung-kim.html">김민성 Min Sung Kim</a>, <a href="makers/tae-yeong-kim.html">김태영 Tae Yeong Kim</a>, <a href="makers/kwanghoon-lee.html">이광훈 Kwanghoon Lee</a>, <a href="makers/paul-lee.html">폴 리 (K. P. Lee) Paul (K. P.) Lee</a>, <a href="makers/yongmin-na.html">나용민 Yongmin Na</a>, <a href="makers/hyunjung-park.html">박현정 Hyunjung Park</a>, <a href="makers/jihwan-park.html">박지환 Jihwan Park</a>, <a href="makers/san-ha-park.html">박산하 San-ha Park</a>, <a href="makers/yongje-song.html">송용제 Yongje Song</a>, <a href="makers/stella-eunbyul-yoo.html">유은별 Stella Eunbyul Yoo</a></p></div>
+</article></div>
+  <section class="split" style="margin-top:48px">
+    <span class="label">등재</span>
+    <div class="split__body"><p>한국 제작자의 악기나 활을 취급하는 딜러는 누구나 등재할 수 있습니다. 상호, 도시, 웹사이트, 취급 제작자를 owensparkley@gmail.com으로 보내 주세요.</p></div>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">K<span>&middot;</span>Lutherie</div>
+      <p class="foot__tag">세계 어디에서든 일하는 한국 현악기·활 제작자들.</p>
+    </div>
+    <div class="foot__col">
+      <strong>팔로우</strong>
+      <a href="https://www.instagram.com/klutherie">Instagram</a><br>
+      <a href="https://www.facebook.com/klutherie.official">Facebook</a>
+    </div>
+    <div class="foot__col">
+      <strong>연락처</strong>
+      owensparkley@gmail.com<br>
+      <a href="join.html">등록 신청하기</a>
+    </div>
+    <p class="foot__legal">© 2026 K-Lutherie. 사진은 제작자 제공. 로스앤젤레스의 이호준(Owen Hojoon Lee)이 운영하는 독립 프로젝트입니다.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (btn && nav && slot) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
+      else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var jf = document.getElementById('joinform');
+  if (jf) {
+    jf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = '보내는 중…';
+      fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
+        .then(function (r) { return r.ok ? r : Promise.reject(r); })
+        .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
+        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. owensparkley@gmail.com으로 직접 보내 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+    });
+  }
+  var filters = document.getElementById('filters');
+  if (filters) {
+    var state = { place: 'all', kind: 'all' };
+    var cards = document.querySelectorAll('[data-place]');
+    var empty = document.getElementById('empty');
+    function apply() {
+      var n = 0;
+      cards.forEach(function (c) {
+        var ok = (state.place === 'all' || c.getAttribute('data-place') === state.place) &&
+                 (state.kind === 'all' || c.getAttribute('data-kind').indexOf(state.kind) !== -1);
+        c.hidden = !ok; if (ok) n++;
+      });
+      if (empty) empty.hidden = n > 0;
+    }
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      var g = b.getAttribute('data-group'); state[g] = b.getAttribute('data-value');
+      filters.querySelectorAll('button[data-group="' + g + '"]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+})();
+</script>
+</body>
+</html>

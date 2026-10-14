@@ -8,17 +8,19 @@
 <meta property="og:title" content="Anna Arietti — K-Lutherie">
 <meta property="og:description" content="Born in Seoul in 1991, Anna Arietti trained at the Antonio Stradivari School in Cremona from 2011 to 2015 under Pier Luigi Aromatico Fantoni. She rece…">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/makers/anna-arietti.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/makers/anna-arietti.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a><a class="lang" href="../ko/makers/anna-arietti.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="../ko/makers/anna-arietti.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -30,7 +32,7 @@
       <p class="caption">Photograph courtesy of the maker</p>
     </div>
     <div class="profile__body">
-      <span class="label">instruments</span>
+      <span class="label">Instruments</span>
       <h1>Anna Arietti</h1>
       <p class="profile__meta">Cremona, Italy<br>Violins, violas and cellos</p>
       <p class="profile__bio">Born in Seoul in 1991, Anna Arietti trained at the Antonio Stradivari School in Cremona from 2011 to 2015 under Pier Luigi Aromatico Fantoni. She received the “Award Personality” medal at Pisogne in 2015 and silver and bronze medals at the Rome competitions in 2016. In 2017 she worked with Edgar Russ, and in 2020 she opened her own workshop in Cremona.</p>
@@ -42,14 +44,8 @@
       </div>
     </div>
   </div>
-  <section class="section">
-    <div class="section__head"><h2>Work</h2></div>
-    <div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_by_Anna_Arietti_Ayoung_An_front_2400x2400_3a18a88a-ad23-4e39-9fc7-ffbcd1c89a6d.jpg" alt="Violin, Cremona 2025" loading="lazy"></div><figcaption>Violin, Cremona 2025</figcaption></figure></div>
-  </section>
-  <section class="section">
-    <div class="section__head"><h2>Dealers</h2></div>
-    <div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div>
-  </section>
+  <section class="section"><div class="section__head"><h2>Work</h2></div><div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_by_Anna_Arietti_Ayoung_An_front_2400x2400_3a18a88a-ad23-4e39-9fc7-ffbcd1c89a6d.jpg" alt="Violin, Cremona 2025" loading="lazy"></div><figcaption>Violin, Cremona 2025</figcaption></figure></div></section>
+  <section class="section"><div class="section__head"><h2>Dealers</h2></div><div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div></section>
   <nav class="pager" aria-label="Makers">
     <span></span>
     <span><a href="hee-jae-choi.html">Hee Jae Choi &rsaquo;</a></span>
@@ -72,7 +68,7 @@
       owensparkley@gmail.com<br>
       <a href="../join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -92,12 +88,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

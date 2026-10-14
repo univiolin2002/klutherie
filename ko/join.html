@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>등록 신청 — K-Lutherie</title>
+<meta name="description" content="K-Lutherie 등재 신청: 세계 어디에서든 일하는 한국 출신 제작자와 복원가.">
+<meta property="og:title" content="등록 신청 — K-Lutherie">
+<meta property="og:description" content="K-Lutherie 등재 신청: 세계 어디에서든 일하는 한국 출신 제작자와 복원가.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/join.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/join.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lang-ko">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">제작자</a><a href="dealers.html">딜러</a><a href="news.html">소식</a><a href="about.html">소개</a><a href="join.html" aria-current="page">등록 신청</a><a class="lang" href="../join.html" hreflang="en" lang="en">English</a></nav>
+    <div class="masthead__right"><a class="lang" href="../join.html" hreflang="en" lang="en">English</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>메뉴</button></div>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="lede">
+    <div class="lede__text"><h1>명부에 등록하기</h1></div>
+    <div class="lede__aside"><p>세계 어디에 있든, 한국 출신 제작자와 복원가를 위한 신청서입니다. 등재는 무료입니다. 보내 주신 내용으로 약력을 한 가지 문체로 쓰고, 확인을 받기 전에는 아무것도 게시하지 않습니다.</p></div>
+  </div>
+  <form class="form" id="joinform" action="https://formspree.io/f/mkjopnob" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="K-Lutherie application">
+    <input type="hidden" name="language" value="ko">
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <fieldset>
+      <legend>본인 정보</legend>
+      <div class="field"><label for="name">영문 이름 <small>(사이트에 표시될 이름)</small></label><input type="text" id="name" name="name" required></div>
+      <div class="field"><label for="name_ko">한글 이름 <small>(선택)</small></label><input type="text" id="name_ko" name="name_korean"></div>
+      <div class="field"><label>한국과의 관계</label><div class="choices"><label><input type="checkbox" name="korean_connection" value="Born in Korea"> 한국 출생</label><label><input type="checkbox" name="korean_connection" value="Korean descent"> 한국계</label><label><input type="checkbox" name="korean_connection" value="Trained in Korea"> 한국에서 수학</label></div></div>
+      <div class="field"><label for="born">출생지와 출생 연도 <small>(선택)</small></label><input type="text" id="born" name="born" placeholder="인천, 1990"></div>
+    </fieldset>
+    <fieldset>
+      <legend>활동지</legend>
+      <div class="field"><label for="city">도시와 국가</label><input type="text" id="city" name="city" required placeholder="크레모나, 이탈리아"></div>
+      <div class="field"><label for="workshop">공방 또는 소속</label><input type="text" id="workshop" name="workshop" placeholder="자기 공방, Via Magenta 48 / … 수석 복원가"></div>
+    </fieldset>
+    <fieldset>
+      <legend>작업</legend>
+      <div class="field"><label>작업 종류</label><div class="choices"><label><input type="radio" name="work_type" value="Making"> 제작</label><label><input type="radio" name="work_type" value="Repair and restoration"> 수리·복원</label><label><input type="radio" name="work_type" value="Both"> 둘 다</label></div></div>
+      <div class="field"><label>악기</label><div class="choices"><label><input type="checkbox" name="instruments" value="Violin"> 바이올린</label><label><input type="checkbox" name="instruments" value="Viola"> 비올라</label><label><input type="checkbox" name="instruments" value="Cello"> 첼로</label><label><input type="checkbox" name="instruments" value="Double bass"> 더블베이스</label><label><input type="checkbox" name="instruments" value="Bows"> 활</label><label><input type="checkbox" name="instruments" value="Guitar"> 기타</label><label><input type="checkbox" name="instruments" value="Other"> 그 외</label></div></div>
+      <div class="field"><label for="instruments_other">그 외, 또는 덧붙일 내용</label><input type="text" id="instruments_other" name="instruments_other"></div>
+    </fieldset>
+    <fieldset>
+      <legend>이력</legend>
+      <div class="field"><label for="training">수련 <small>(학교, 스승, 연도)</small></label><textarea id="training" name="training" placeholder="이스티투토 스트라디바리, 크레모나, 2011–2015, … 문하"></textarea></div>
+      <div class="field"><label for="awards">콩쿠르 수상과 경력 <small>(연도, 콩쿠르, 부문, 결과)</small></label><textarea id="awards" name="awards" placeholder="2024 — 크레모나 트리엔날레 — 첼로 — 금메달"></textarea></div>
+      <div class="field"><label for="bio">짧은 자기소개 <small>(자유롭게 써 주세요. 사이트 문체로 다듬어 확인을 받습니다)</small></label><textarea id="bio" name="biography" required style="min-height:180px"></textarea></div>
+      <div class="field"><label for="dealers">작품을 취급하는 딜러 <small>(상호와 도시)</small></label><textarea id="dealers" name="dealers" placeholder="LA Violin Shop, 로스앤젤레스"></textarea></div>
+    </fieldset>
+    <fieldset>
+      <legend>링크와 연락처</legend>
+      <div class="field"><label for="instagram">인스타그램</label><input type="text" id="instagram" name="instagram" placeholder="@아이디"></div>
+      <div class="field"><label for="website">웹사이트 <small>(선택)</small></label><input type="url" id="website" name="website" placeholder="https://"></div>
+      <div class="field"><label for="email">이메일</label><input type="email" id="email" name="email" required></div>
+      <div class="field"><label for="phone">전화 <small>(선택, 국가번호 포함)</small></label><input type="tel" id="phone" name="phone"></div>
+    </fieldset>
+    <fieldset>
+      <legend>사진</legend>
+      <div class="field">
+        <label for="photo">본인 사진, 되도록 작업대에서 찍은 것</label>
+        <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
+        <p class="hint">JPG 또는 PNG, 긴 변 2000픽셀 이상이면 좋습니다. 세로 사진이 가장 잘 맞습니다. 파일이 너무 크면 owensparkley@gmail.com으로 따로 보내 주세요.</p>
+      </div>
+      <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> 이 사진은 제 것이거나 촬영자의 허락을 받았으며, “사진 — 제작자 제공” 표기로 klutherie.com에 게시해도 됩니다.</label></div></div>
+    </fieldset>
+    <fieldset>
+      <legend>그 밖에</legend>
+      <div class="field"><label for="notes">메모 <small>(참여하는 전시, 유명 연주자가 쓰는 악기, 알려 주고 싶은 것)</small></label><textarea id="notes" name="notes"></textarea></div>
+    </fieldset>
+    <button class="btn btn--solid btn--lg" type="submit" id="submitbtn">신청서 보내기</button>
+    <p class="form__note">신청서는 이호준(Owen Hojoon Lee)의 owensparkley@gmail.com으로 전달됩니다. 일주일 안에 페이지 초안을 보내 확인을 받습니다.</p>
+    <p class="form__status" id="formstatus" hidden></p>
+  </form>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">K<span>&middot;</span>Lutherie</div>
+      <p class="foot__tag">세계 어디에서든 일하는 한국 현악기·활 제작자들.</p>
+    </div>
+    <div class="foot__col">
+      <strong>팔로우</strong>
+      <a href="https://www.instagram.com/klutherie">Instagram</a><br>
+      <a href="https://www.facebook.com/klutherie.official">Facebook</a>
+    </div>
+    <div class="foot__col">
+      <strong>연락처</strong>
+      owensparkley@gmail.com<br>
+      <a href="join.html">등록 신청하기</a>
+    </div>
+    <p class="foot__legal">© 2026 K-Lutherie. 사진은 제작자 제공. 로스앤젤레스의 이호준(Owen Hojoon Lee)이 운영하는 독립 프로젝트입니다.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (btn && nav && slot) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
+      else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var jf = document.getElementById('joinform');
+  if (jf) {
+    jf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = '보내는 중…';
+      fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
+        .then(function (r) { return r.ok ? r : Promise.reject(r); })
+        .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
+        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. owensparkley@gmail.com으로 직접 보내 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+    });
+  }
+  var filters = document.getElementById('filters');
+  if (filters) {
+    var state = { place: 'all', kind: 'all' };
+    var cards = document.querySelectorAll('[data-place]');
+    var empty = document.getElementById('empty');
+    function apply() {
+      var n = 0;
+      cards.forEach(function (c) {
+        var ok = (state.place === 'all' || c.getAttribute('data-place') === state.place) &&
+                 (state.kind === 'all' || c.getAttribute('data-kind').indexOf(state.kind) !== -1);
+        c.hidden = !ok; if (ok) n++;
+      });
+      if (empty) empty.hidden = n > 0;
+    }
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      var g = b.getAttribute('data-group'); state[g] = b.getAttribute('data-value');
+      filters.querySelectorAll('button[data-group="' + g + '"]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  }
+})();
+</script>
+</body>
+</html>

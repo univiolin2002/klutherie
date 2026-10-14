@@ -8,17 +8,19 @@
 <meta property="og:title" content="Hee Jae Choi — K-Lutherie">
 <meta property="og:description" content="Hee Jae Choi is studying violin making at the Istituto Stradivari in Cremona. In 2024 she won First Prize at the Violin Making Competition for Young L…">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/makers/hee-jae-choi.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/makers/hee-jae-choi.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a><a class="lang" href="../ko/makers/hee-jae-choi.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="../ko/makers/hee-jae-choi.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -30,7 +32,7 @@
       <p class="caption">Photograph courtesy of the maker</p>
     </div>
     <div class="profile__body">
-      <span class="label">instruments</span>
+      <span class="label">Instruments</span>
       <h1>Hee Jae Choi</h1>
       <p class="profile__meta">Cremona, Italy<br>Violins; repair</p>
       <p class="profile__bio">Hee Jae Choi is studying violin making at the Istituto Stradivari in Cremona. In 2024 she won First Prize at the Violin Making Competition for Young Luthiers in Pisogne. Alongside her studies she has trained in several workshops, including LA Violin Shop in Los Angeles, building experience in both making and repair within the Cremonese tradition.</p>
@@ -42,14 +44,8 @@
       </div>
     </div>
   </div>
-  <section class="section">
-    <div class="section__head"><h2>Work</h2></div>
-    <div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_by_HeeJae_Choi_Cremona_2024_front_2400x2400_7c19ca59-2719-483c-b696-b23dd55c9987.jpg" alt="Violin, Cremona 2024" loading="lazy"></div><figcaption>Violin, Cremona 2024</figcaption></figure></div>
-  </section>
-  <section class="section">
-    <div class="section__head"><h2>Dealers</h2></div>
-    <div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div>
-  </section>
+  <section class="section"><div class="section__head"><h2>Work</h2></div><div class="work"><figure><div class="plate"><img src="https://cdn.shopify.com/s/files/1/0486/7443/9330/files/Violin_by_HeeJae_Choi_Cremona_2024_front_2400x2400_7c19ca59-2719-483c-b696-b23dd55c9987.jpg" alt="Violin, Cremona 2024" loading="lazy"></div><figcaption>Violin, Cremona 2024</figcaption></figure></div></section>
+  <section class="section"><div class="section__head"><h2>Dealers</h2></div><div class="rows"><div class="row"><div class="row__k">Los Angeles</div><div class="row__v"><a href="https://www.laviolinshop.com">LA Violin Shop</a></div></div></div></section>
   <nav class="pager" aria-label="Makers">
     <span><a href="anna-arietti.html">&lsaquo; Anna Arietti</a></span>
     <span><a href="kwanghoon-choi.html">Kwanghoon Choi &rsaquo;</a></span>
@@ -72,7 +68,7 @@
       owensparkley@gmail.com<br>
       <a href="../join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -92,12 +88,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

@@ -8,17 +8,19 @@
 <meta property="og:title" content="Isaac Jang — K-Lutherie">
 <meta property="og:description" content="Born in Busan, Korea, Isaac Jang moved to Los Angeles in 1999 and took up the guitar at fourteen, drawn to fingerstyle playing by Tommy Emmanuel. He g…">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/makers/isaac-jang.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/makers/isaac-jang.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a><a class="lang" href="../ko/makers/isaac-jang.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="../ko/makers/isaac-jang.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -30,7 +32,7 @@
       <p class="caption">Photograph to follow</p>
     </div>
     <div class="profile__body">
-      <span class="label">instruments</span>
+      <span class="label">Instruments</span>
       <h1>Isaac Jang</h1>
       <p class="profile__meta">Alhambra, Los Angeles, United States<br>Steel-string acoustic guitars</p>
       <p class="profile__bio">Born in Busan, Korea, Isaac Jang moved to Los Angeles in 1999 and took up the guitar at fourteen, drawn to fingerstyle playing by Tommy Emmanuel. He graduated from the Galloup School of Lutherie in 2007 and apprenticed with Kathy Wingert, then spent several years at Westwood Music under Fred Walecki doing setups, structural and finish repairs and vintage restoration before building under his own name. Since 2013 he has taught acoustic guitar making at the Musicians Institute in Hollywood. He builds a small number of orchestra-model guitars each year from his workshop in Alhambra, Los Angeles, and exhibits at NAMM and the Sound Messe in Osaka.</p>
@@ -43,10 +45,7 @@
     </div>
   </div>
   
-  <section class="section">
-    <div class="section__head"><h2>Dealers</h2></div>
-    <div class="rows"><div class="row"><div class="row__k">&nbsp;</div><div class="row__v"><small>To be confirmed</small></div></div></div>
-  </section>
+  <section class="section"><div class="section__head"><h2>Dealers</h2></div><div class="rows"><div class="row"><div class="row__k">&nbsp;</div><div class="row__v"><small>To be confirmed</small></div></div></div></section>
   <nav class="pager" aria-label="Makers">
     <span><a href="dongpil-im.html">&lsaquo; Dongpil Im</a></span>
     <span><a href="gawang-jung.html">Gawang Jung &rsaquo;</a></span>
@@ -69,7 +68,7 @@
       owensparkley@gmail.com<br>
       <a href="../join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -89,12 +88,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

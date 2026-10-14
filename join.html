@@ -8,17 +8,19 @@
 <meta property="og:title" content="Join — K-Lutherie">
 <meta property="og:description" content="Apply to be listed on K-Lutherie: makers and restorers of Korean origin, anywhere in the world.">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://klutherie.com/join.html">
+<link rel="alternate" hreflang="ko" href="https://klutherie.com/ko/join.html">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html" aria-current="page">Join</a></nav>
-    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="makers.html">Makers</a><a href="dealers.html">Dealers</a><a href="news.html">News & Events</a><a href="about.html">About</a><a href="join.html" aria-current="page">Join</a><a class="lang" href="ko/join.html" hreflang="ko" lang="ko">한국어</a></nav>
+    <div class="masthead__right"><a class="lang" href="ko/join.html" hreflang="ko" lang="ko">한국어</a><button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button></div>
   </div>
   <div class="wrap" id="navmobile"></div>
 </header>
@@ -28,11 +30,10 @@
     <div class="lede__text"><h1>Join the register</h1></div>
     <div class="lede__aside"><p>For makers and restorers of Korean origin, anywhere in the world. Listing is free. We write every biography in one voice from what you send, and nothing goes online before you have seen it.</p></div>
   </div>
-
   <form class="form" id="joinform" action="https://formspree.io/f/mkjopnob" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="_subject" value="K-Lutherie application">
+    <input type="hidden" name="language" value="en">
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
     <fieldset>
       <legend>Who you are</legend>
       <div class="field"><label for="name">Name in English <small>(as you would like it shown)</small></label><input type="text" id="name" name="name" required></div>
@@ -40,20 +41,17 @@
       <div class="field"><label>Korean connection</label><div class="choices"><label><input type="checkbox" name="korean_connection" value="Born in Korea"> Born in Korea</label><label><input type="checkbox" name="korean_connection" value="Korean descent"> Korean descent</label><label><input type="checkbox" name="korean_connection" value="Trained in Korea"> Trained in Korea</label></div></div>
       <div class="field"><label for="born">Place and year of birth <small>(optional)</small></label><input type="text" id="born" name="born" placeholder="Incheon, 1990"></div>
     </fieldset>
-
     <fieldset>
       <legend>Where you work</legend>
       <div class="field"><label for="city">City and country</label><input type="text" id="city" name="city" required placeholder="Cremona, Italy"></div>
       <div class="field"><label for="workshop">Workshop or employer</label><input type="text" id="workshop" name="workshop" placeholder="Own workshop, Via Magenta 48 / Head restorer at …"></div>
     </fieldset>
-
     <fieldset>
       <legend>What you do</legend>
       <div class="field"><label>Kind of work</label><div class="choices"><label><input type="radio" name="work_type" value="Making"> Making</label><label><input type="radio" name="work_type" value="Repair and restoration"> Repair and restoration</label><label><input type="radio" name="work_type" value="Both"> Both</label></div></div>
       <div class="field"><label>Instruments</label><div class="choices"><label><input type="checkbox" name="instruments" value="Violin"> Violin</label><label><input type="checkbox" name="instruments" value="Viola"> Viola</label><label><input type="checkbox" name="instruments" value="Cello"> Cello</label><label><input type="checkbox" name="instruments" value="Double bass"> Double bass</label><label><input type="checkbox" name="instruments" value="Bows"> Bows</label><label><input type="checkbox" name="instruments" value="Guitar"> Guitar</label><label><input type="checkbox" name="instruments" value="Other"> Other</label></div></div>
       <div class="field"><label for="instruments_other">If other, or anything to add</label><input type="text" id="instruments_other" name="instruments_other"></div>
     </fieldset>
-
     <fieldset>
       <legend>Your background</legend>
       <div class="field"><label for="training">Training <small>(schools, teachers, years)</small></label><textarea id="training" name="training" placeholder="Istituto Stradivari, Cremona, 2011–2015, under …"></textarea></div>
@@ -61,7 +59,6 @@
       <div class="field"><label for="bio">Short biography <small>(in your own words; we will edit it to the site’s style and send it back to you)</small></label><textarea id="bio" name="biography" required style="min-height:180px"></textarea></div>
       <div class="field"><label for="dealers">Dealers who carry your work <small>(shop name and city)</small></label><textarea id="dealers" name="dealers" placeholder="LA Violin Shop, Los Angeles"></textarea></div>
     </fieldset>
-
     <fieldset>
       <legend>Links and contact</legend>
       <div class="field"><label for="instagram">Instagram</label><input type="text" id="instagram" name="instagram" placeholder="@yourhandle"></div>
@@ -69,7 +66,6 @@
       <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
       <div class="field"><label for="phone">Phone <small>(optional, with country code)</small></label><input type="tel" id="phone" name="phone"></div>
     </fieldset>
-
     <fieldset>
       <legend>Photograph</legend>
       <div class="field">
@@ -79,12 +75,10 @@
       </div>
       <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> I own this photograph, or have the photographer’s permission, and it may be published on klutherie.com with the credit “Photograph courtesy of the maker”.</label></div></div>
     </fieldset>
-
     <fieldset>
       <legend>Anything else</legend>
       <div class="field"><label for="notes">Notes <small>(exhibitions you take part in, instruments played by notable musicians, anything we should know)</small></label><textarea id="notes" name="notes"></textarea></div>
     </fieldset>
-
     <button class="btn btn--solid btn--lg" type="submit" id="submitbtn">Send application</button>
     <p class="form__note">Your application goes to Owen Hojoon Lee at owensparkley@gmail.com. We reply within a week with a draft of your page for approval.</p>
     <p class="form__status" id="formstatus" hidden></p>
@@ -107,7 +101,7 @@
       owensparkley@gmail.com<br>
       <a href="join.html">Apply to be listed</a>
     </div>
-    <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
+    <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
 </footer>
 <script>
@@ -127,12 +121,12 @@
   if (jf) {
     jf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
-      btn.disabled = true; btn.textContent = 'Sending…';
+      var st = document.getElementById('formstatus'), b = document.getElementById('submitbtn');
+      b.disabled = true; b.textContent = 'Sending…';
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
-        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');
