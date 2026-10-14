@@ -174,6 +174,7 @@ MAKERS = [
     },
     {
         "slug": "yongmin-na",
+        "instagram": "yongmin.na.archetier",
         "name": "Yongmin Na",
         "sort": "Na",
         "city": "Sejong",
