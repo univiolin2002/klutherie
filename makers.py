@@ -159,6 +159,7 @@ MAKERS = [
     },
     {
         "slug": "paul-lee",
+        "instagram": "kleevnb",
         "name": "Paul (K. P.) Lee",
         "sort": "Lee P",
         "city": "Tustin, California",
