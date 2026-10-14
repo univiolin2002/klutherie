@@ -17,7 +17,7 @@
 <header class="masthead">
   <div class="wrap masthead__inner">
     <a class="wordmark" href="../index.html">K<span>&middot;</span>Lutherie</a>
-    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a></nav>
+    <nav class="nav" id="nav" aria-label="Main"><a href="../makers.html" aria-current="page">Makers</a><a href="../dealers.html">Dealers</a><a href="../news.html">News & Events</a><a href="../about.html">About</a><a href="../join.html">Join</a></nav>
     <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav"><span class="navtoggle__bars" aria-hidden="true"></span>Menu</button>
   </div>
   <div class="wrap" id="navmobile"></div>
@@ -67,7 +67,7 @@
     <div class="foot__col">
       <strong>Contact</strong>
       owensparkley@gmail.com<br>
-      <a href="../about.html#listing">Listing a maker or dealer</a>
+      <a href="../join.html">Apply to be listed</a>
     </div>
     <p class="foot__legal">&copy; 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
   </div>
@@ -83,6 +83,18 @@
       btn.setAttribute('aria-expanded', String(!open));
       if (open) { nav.classList.remove('nav--open'); nav.style.display = ''; }
       else { slot.appendChild(nav); nav.classList.add('nav--open'); nav.style.display = 'flex'; }
+    });
+  }
+  var jf = document.getElementById('joinform');
+  if (jf) {
+    jf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var st = document.getElementById('formstatus'), btn = document.getElementById('submitbtn');
+      btn.disabled = true; btn.textContent = 'Sending…';
+      fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
+        .then(function (r) { return r.ok ? r : Promise.reject(r); })
+        .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); btn.textContent = 'Sent'; })
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; btn.disabled = false; btn.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

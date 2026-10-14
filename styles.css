@@ -212,3 +212,33 @@ h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(22
 .foot__col strong { display: block; color: var(--foot-fg); font-weight: 500; letter-spacing: 0.16em; font-size: 11px; text-transform: uppercase; margin-bottom: 6px; }
 .foot__legal { font-size: 12px; line-height: 1.9; color: var(--foot-muted); margin: 0; max-width: 320px; }
 @media (max-width: 899px) { .foot__inner { flex-direction: column; gap: 28px; } .foot__tag, .foot__legal { max-width: none; } }
+
+/* ---------- form ---------- */
+
+.form { max-width: 720px; }
+.form fieldset { border: 0; padding: 0; margin: 0 0 clamp(36px, 5vw, 52px); }
+.form legend { font-family: var(--serif); font-size: clamp(20px, 2.6vw, 24px); padding: 0 0 18px; border-bottom: 1px solid var(--rule); width: 100%; margin-bottom: 22px; }
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 22px; }
+.field label { font-size: 14px; font-weight: 500; }
+.field label small { font-weight: 400; color: var(--muted); }
+.field input[type="text"], .field input[type="email"], .field input[type="tel"], .field input[type="url"], .field textarea, .field select {
+  font-family: var(--sans); font-size: 16px; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--ink); padding: 12px 14px; width: 100%; border-radius: 0; min-width: 0;
+}
+.field textarea { min-height: 120px; line-height: 1.6; resize: vertical; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 2px solid var(--ink); outline-offset: 1px; }
+.field .hint { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+.choices { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.choices label { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 400; cursor: pointer; }
+.choices input { width: 16px; height: 16px; margin: 0; accent-color: var(--ink); }
+.field input[type="file"] { font-size: 14px; }
+.form .btn { margin-top: 8px; }
+.form__note { font-size: 14px; color: var(--muted); line-height: 1.7; margin: 16px 0 0; }
+.form__status { font-size: 15px; margin: 18px 0 0; padding: 14px 16px; border: 1px solid var(--rule); }
+
+.btn { display: inline-block; font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: 0.04em; line-height: 1; padding: 14px 22px; border: 1px solid var(--ink); background: none; color: var(--ink); cursor: pointer; border-radius: 0; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+.btn--solid { background: var(--ink); color: var(--bg); }
+.btn--solid:hover { opacity: 0.85; }
+.btn--lg { font-size: 15px; padding: 16px 28px; }
+.btn:disabled { opacity: 0.5; cursor: default; }
