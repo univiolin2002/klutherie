@@ -235,6 +235,7 @@ MAKERS = [
     },
     {
         "slug": "yongje-song",
+        "instagram": "yongje_song_bows",
         "name": "Yongje Song",
         "sort": "Song",
         "city": "Seoul",
