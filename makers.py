@@ -299,6 +299,23 @@ MAKERS = [
 
 NEWS = [
     {
+        "slug": "cuvee-darling-cremona-2026",
+        "date": "2026-10",
+        "date_text": "October 2026",
+        "title": "Three Korean makers at Cuvée Darling, Cremona",
+        "summary": "Darling Publications’ annual exhibition of contemporary instruments and bows, held on 2–3 October 2026 at the Società Filarmonica Ruggero Manna, included Caterina Rota Kim, Eunjin Kim and Sihyeon Park among its twenty-one violin makers.",
+        "makers": ["caterina-rota-kim"],
+        "body": [
+            "Cuvée Darling, the exhibition that Andy Lim of Darling Publications, Cologne, brings to Cremona each autumn, was held this year at a new address: the Società Filarmonica Ruggero Manna on Via dei Tribunali, on 2 and 3 October 2026. Twenty-one violin makers and nine bow makers showed their work over two days, and the exhibition closed, as it always does, with a finissage party.",
+            "Three of the violin makers were Korean, all working in Cremona: Caterina Rota Kim, Eunjin Kim and Sihyeon Park. Caterina Rota Kim and Sihyeon Park were among the exhibition’s first-time exhibitors, singled out in the invitation alongside Manuel Di Landa as the year’s new Cremona names. They showed alongside makers such as Andrea Cabrini, Roberto Cavagnoli, Nicolas Gilles, Jérémie Legrand, Giacomo Rocca and Anton Somers, and archetiers including Johanna and Josef P. Gabriel, Christopher Graves, Tibor Kovács, Gary Leahy and Mitsuaki Sasano.",
+            "The exhibition also marked the publication of the third volume of The Great Contemporary Bow Makers of the 21st Century, Darling Publications’ full-size survey of more than 350 bows, following the volumes of 2011 and 2013.",
+            "Eunjin Kim and Sihyeon Park are not yet listed on K-Lutherie. Both are welcome to join.",
+        ],
+        "sources": [
+            ("Darling Publications — invitation, Cuvée Darling Cremona 2026", "https://www.darling-publications.com/"),
+        ],
+    },
+    {
         "slug": "la-forma-del-suono-2026",
         "date": "2026-02",
         "date_text": "February 2026",
