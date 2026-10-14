@@ -9,7 +9,7 @@ E = html.escape
 FONTS = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600&display=swap">'
 
 NAV = [("makers.html", "Makers"), ("dealers.html", "Dealers"), ("news.html", "News & Events"), ("about.html", "About"), ("join.html", "Join")]
-FORM_ENDPOINT = "https://formspree.io/f/REPLACE_ME"
+FORM_ENDPOINT = "https://formspree.io/f/mkjopnob"
 
 JS = """<script>
 (function () {
