@@ -25,6 +25,7 @@ MAKERS = [
     },
     {
         "slug": "hee-jae-choi",
+        "instagram": "_heejae_",
         "name": "Hee Jae Choi",
         "sort": "Choi H",
         "city": "Cremona",
