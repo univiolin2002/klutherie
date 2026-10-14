@@ -1,5 +1,6 @@
 # K-lutherie — maker records. One dict per maker. Add a record, run build.py.
 # photo: slug of file in images/makers (slug-480.jpg, slug-960.jpg, slug-full.jpg)
+# instagram: handle without @ (optional)
 # work: list of (caption, image url) — instruments, from dealer listings
 
 LAVS = {"name": "LA Violin Shop", "city": "Los Angeles", "url": "https://www.laviolinshop.com"}

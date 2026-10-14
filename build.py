@@ -224,6 +224,7 @@ for i, m in enumerate(makers):
       <div class="facts rows">
         <div class="row"><div class="row__k">Works in</div><div class="row__v">{E(place(m))}</div></div>
         <div class="row"><div class="row__k">Makes</div><div class="row__v">{E(m['makes'])}</div></div>
+        {f'<div class="row"><div class="row__k">Instagram</div><div class="row__v"><a href="https://www.instagram.com/{m["instagram"].lstrip("@")}">@{E(m["instagram"].lstrip("@"))}</a></div></div>' if m.get('instagram') else ''}
       </div>
     </div>
   </div>
