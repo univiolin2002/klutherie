@@ -131,6 +131,7 @@ MAKERS = [
     },
     {
         "slug": "tae-yeong-kim",
+        "instagram": "taeyeong____kim",
         "name": "Tae Yeong Kim",
         "sort": "Kim T",
         "city": "Seoul",
