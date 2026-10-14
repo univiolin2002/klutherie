@@ -221,6 +221,7 @@ MAKERS = [
     },
     {
         "slug": "san-ha-park",
+        "instagram": "santonio_stradivaricaster",
         "name": "San-ha Park",
         "sort": "Park S",
         "city": "Los Angeles",
