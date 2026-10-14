@@ -160,7 +160,6 @@ class Site:
     </div>
     <div class="foot__col">
       <strong>{T['foot_contact']}</strong>
-      owensparkley@gmail.com<br>
       <a href="{p}join.html">{T['foot_apply']}</a>
     </div>
     <p class="foot__legal">{T['foot_legal']}</p>
@@ -310,7 +309,7 @@ class Site:
   <div class="rows">{rows}</div>
   <section class="split" style="margin-top:48px">
     <span class="label">{T['listing']}</span>
-    <div class="split__body"><p>{T['dealers_listing']}</p></div>
+    <div class="split__body"><p>{T['dealers_listing'].format(join=f'<a href="join.html" style="text-decoration:underline;text-underline-offset:4px">{T["join_link"]}</a>')}</p></div>
   </section>
 </div>"""
         self.write("dealers.html", self.page("dealers.html", T["dealers_title"], T["dealers_desc"], body, "dealers.html"))
@@ -425,7 +424,7 @@ class Site:
   <section class="split"><span class="label">{T['what_listed']}</span><div class="split__body"><p>{T['about_p2']}</p></div></section>
   <section class="split" id="listing"><span class="label">{T['being_listed']}</span><div class="split__body">
     <p>{T['about_p3a']}<a href="join.html" style="text-decoration:underline;text-underline-offset:4px">{T['about_p3_link']}</a>{T['about_p3b']}</p>
-    <p>{T['about_p4']}</p></div></section>
+    <p>{T['about_p4'].format(join=f'<a href="join.html" style="text-decoration:underline;text-underline-offset:4px">{T["join_link"]}</a>')}</p></div></section>
   <section class="split"><span class="label">{T['who_runs']}</span><div class="split__body"><p>{T['about_p5']}</p></div></section>
   <section class="split"><span class="label">{T['follow']}</span><div class="split__body"><p><a href="https://www.instagram.com/klutherie">Instagram @klutherie</a><br><a href="https://www.facebook.com/klutherie.official">Facebook /klutherie.official</a></p></div></section>
 </div>"""

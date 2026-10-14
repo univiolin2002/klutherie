@@ -36,7 +36,7 @@
 </article></div>
   <section class="split" style="margin-top:48px">
     <span class="label">등재</span>
-    <div class="split__body"><p>한국계 제작자의 악기나 활을 취급하는 딜러는 누구나 등재할 수 있습니다. 상호, 도시, 웹사이트, 취급하는 제작자를 owensparkley@gmail.com으로 보내 주세요.</p></div>
+    <div class="split__body"><p>한국계 제작자의 악기나 활을 취급하는 딜러는 누구나 등재할 수 있습니다. <a href="join.html" style="text-decoration:underline;text-underline-offset:4px">신청서</a>에 상호, 도시, 웹사이트, 취급하는 제작자를 적어 보내 주세요.</p></div>
   </section>
 </div>
 </main>
@@ -52,8 +52,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>연락처</strong>
-      owensparkley@gmail.com<br>
+      <strong>등재</strong>
       <a href="join.html">등록 신청하기</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. 사진은 제작자 제공. 로스앤젤레스의 이호준(Owen Hojoon Lee)이 운영하는 독립 프로젝트입니다.</p>
@@ -81,7 +80,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
-        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. owensparkley@gmail.com으로 직접 보내 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. 잠시 후 다시 시도해 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
     });
   }
   var filters = document.getElementById('filters');

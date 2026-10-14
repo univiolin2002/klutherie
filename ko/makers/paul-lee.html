@@ -64,8 +64,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>연락처</strong>
-      owensparkley@gmail.com<br>
+      <strong>등재</strong>
       <a href="../join.html">등록 신청하기</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. 사진은 제작자 제공. 로스앤젤레스의 이호준(Owen Hojoon Lee)이 운영하는 독립 프로젝트입니다.</p>
@@ -93,7 +92,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
-        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. owensparkley@gmail.com으로 직접 보내 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. 잠시 후 다시 시도해 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
     });
   }
   var filters = document.getElementById('filters');

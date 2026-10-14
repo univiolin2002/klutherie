@@ -36,7 +36,7 @@
 </article></div>
   <section class="split" style="margin-top:48px">
     <span class="label">Listing</span>
-    <div class="split__body"><p>Dealers who carry instruments or bows by a Korean maker are welcome to be listed. Write to owensparkley@gmail.com with the shop name, city, website and the makers carried.</p></div>
+    <div class="split__body"><p>Dealers who carry instruments or bows by a Korean maker are welcome to be listed. <a href="join.html" style="text-decoration:underline;text-underline-offset:4px">Use the application form</a> with the shop name, city, website and the makers carried in the notes.</p></div>
   </section>
 </div>
 </main>
@@ -52,8 +52,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>Contact</strong>
-      owensparkley@gmail.com<br>
+      <strong>Listing</strong>
       <a href="join.html">Apply to be listed</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
@@ -81,7 +80,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please try again in a moment.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

@@ -33,8 +33,8 @@
   </div>
   <section class="split"><span class="label">What is listed</span><div class="split__body"><p>Each maker has a page with a photograph, a short biography, the city they work in, the kind of work they do, and the dealers who carry their instruments. Dealer listings are standing relationships rather than current stock. Biographies are written in one voice from material the makers supply, and are kept to the facts: training, workshop, recognition.</p></div></section>
   <section class="split" id="listing"><span class="label">Being listed</span><div class="split__body">
-    <p>Makers of Korean origin who make or restore stringed instruments or bows are welcome to be listed, at no cost. <a href="join.html" style="text-decoration:underline;text-underline-offset:4px">Use the application form</a>, or write to owensparkley@gmail.com with a photograph of yourself at work, a short biography, your city, what you make, and the dealers who carry your work.</p>
-    <p>Dealers who carry a listed maker, or a maker not yet listed, can write to the same address.</p></div></section>
+    <p>Makers of Korean origin who make or restore stringed instruments or bows are welcome to be listed, at no cost. <a href="join.html" style="text-decoration:underline;text-underline-offset:4px">Use the application form</a> with a photograph of yourself at work, a short biography, your city, what you make, and the dealers who carry your work.</p>
+    <p>Dealers who carry a listed maker, or a maker not yet listed, are welcome to be listed too. <a href="join.html" style="text-decoration:underline;text-underline-offset:4px">Use the application form</a>, with the shop name and the makers carried in the notes.</p></div></section>
   <section class="split"><span class="label">Who runs it</span><div class="split__body"><p>K-Lutherie was started in 2026 by Owen Hojoon Lee, who has worked in the violin trade in Los Angeles since 2002 and is the founder of LA Violin Shop. It is an independent project with no commercial purpose. Its aim is a network in which Korean makers know one another, grow together, and share the knowledge and experience that make for better instruments and better sound. Dealers are listed on the same terms whoever they are.</p></div></section>
   <section class="split"><span class="label">Follow</span><div class="split__body"><p><a href="https://www.instagram.com/klutherie">Instagram @klutherie</a><br><a href="https://www.facebook.com/klutherie.official">Facebook /klutherie.official</a></p></div></section>
 </div>
@@ -51,8 +51,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>Contact</strong>
-      owensparkley@gmail.com<br>
+      <strong>Listing</strong>
       <a href="join.html">Apply to be listed</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
@@ -80,7 +79,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please try again in a moment.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');

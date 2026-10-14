@@ -71,7 +71,7 @@
       <div class="field">
         <label for="photo">본인 사진, 되도록 작업대에서 찍은 것</label>
         <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
-        <p class="hint">JPG 또는 PNG, 긴 변 2000픽셀 이상이면 좋습니다. 세로 사진이 가장 잘 맞습니다. 파일이 너무 크면 owensparkley@gmail.com으로 따로 보내 주세요.</p>
+        <p class="hint">JPG 또는 PNG, 긴 변 2000픽셀 이상이면 좋습니다. 세로 사진이 가장 잘 맞습니다. 파일이 너무 크면 비고란에 적어 주시면 답장드릴 때 따로 요청하겠습니다.</p>
       </div>
       <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> 이 사진은 제 것이거나 촬영자의 허락을 받았으며, “사진 — 제작자 제공” 표기로 klutherie.com에 게시해도 됩니다.</label></div></div>
     </fieldset>
@@ -80,7 +80,7 @@
       <div class="field"><label for="notes">메모 <small>(참여하는 전시, 유명 연주자가 쓰는 악기, 알려 주고 싶은 것)</small></label><textarea id="notes" name="notes"></textarea></div>
     </fieldset>
     <button class="btn btn--solid btn--lg" type="submit" id="submitbtn">신청서 보내기</button>
-    <p class="form__note">신청서는 이호준(Owen Hojoon Lee)의 owensparkley@gmail.com으로 전달됩니다. 일주일 안에 페이지 초안을 보내 확인을 받습니다.</p>
+    <p class="form__note">신청서는 이호준(Owen Hojoon Lee)에게 전달됩니다. 일주일 안에 페이지 초안을 보내 드리고 확인을 받습니다.</p>
     <p class="form__status" id="formstatus" hidden></p>
   </form>
 </div>
@@ -97,8 +97,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>연락처</strong>
-      owensparkley@gmail.com<br>
+      <strong>등재</strong>
       <a href="join.html">등록 신청하기</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. 사진은 제작자 제공. 로스앤젤레스의 이호준(Owen Hojoon Lee)이 운영하는 독립 프로젝트입니다.</p>
@@ -126,7 +125,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = '감사합니다. 신청서가 전송되었습니다. 일주일 안에 연락드리겠습니다.'; jf.reset(); b.textContent = '전송됨'; })
-        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. owensparkley@gmail.com으로 직접 보내 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
+        .catch(function () { st.hidden = false; st.textContent = '문제가 생겼습니다. 잠시 후 다시 시도해 주세요.'; b.disabled = false; b.textContent = '신청서 보내기'; });
     });
   }
   var filters = document.getElementById('filters');

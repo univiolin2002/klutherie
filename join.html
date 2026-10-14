@@ -71,7 +71,7 @@
       <div class="field">
         <label for="photo">A photograph of you, ideally at the bench</label>
         <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
-        <p class="hint">JPG or PNG, at least 2000 pixels on the long side if you have it. Portrait orientation works best. If the file is too large to attach, send it separately to owensparkley@gmail.com.</p>
+        <p class="hint">JPG or PNG, at least 2000 pixels on the long side if you have it. Portrait orientation works best. If the file is too large to attach, say so in the notes and we will ask for it when we reply.</p>
       </div>
       <div class="field"><div class="choices"><label><input type="checkbox" name="photo_rights" value="yes" required> I own this photograph, or have the photographer’s permission, and it may be published on klutherie.com with the credit “Photograph courtesy of the maker”.</label></div></div>
     </fieldset>
@@ -80,7 +80,7 @@
       <div class="field"><label for="notes">Notes <small>(exhibitions you take part in, instruments played by notable musicians, anything we should know)</small></label><textarea id="notes" name="notes"></textarea></div>
     </fieldset>
     <button class="btn btn--solid btn--lg" type="submit" id="submitbtn">Send application</button>
-    <p class="form__note">Your application goes to Owen Hojoon Lee at owensparkley@gmail.com. We reply within a week with a draft of your page for approval.</p>
+    <p class="form__note">Your application goes to Owen Hojoon Lee. We reply within a week with a draft of your page for approval.</p>
     <p class="form__status" id="formstatus" hidden></p>
   </form>
 </div>
@@ -97,8 +97,7 @@
       <a href="https://www.facebook.com/klutherie.official">Facebook</a>
     </div>
     <div class="foot__col">
-      <strong>Contact</strong>
-      owensparkley@gmail.com<br>
+      <strong>Listing</strong>
       <a href="join.html">Apply to be listed</a>
     </div>
     <p class="foot__legal">© 2026 K-Lutherie. Photographs courtesy of the makers. An independent project by Owen Hojoon Lee, Los Angeles.</p>
@@ -126,7 +125,7 @@
       fetch(jf.action, { method: 'POST', body: new FormData(jf), headers: { 'Accept': 'application/json' } })
         .then(function (r) { return r.ok ? r : Promise.reject(r); })
         .then(function () { st.hidden = false; st.textContent = 'Thank you. Your application has been sent. We will be in touch within a week.'; jf.reset(); b.textContent = 'Sent'; })
-        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please email your details to owensparkley@gmail.com instead.'; b.disabled = false; b.textContent = 'Send application'; });
+        .catch(function () { st.hidden = false; st.textContent = 'Something went wrong. Please try again in a moment.'; b.disabled = false; b.textContent = 'Send application'; });
     });
   }
   var filters = document.getElementById('filters');
