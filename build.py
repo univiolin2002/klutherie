@@ -86,6 +86,7 @@ class Site:
         d["country"] = k.get("country", m["country"])
         d["makes"] = k.get("makes", m["makes"])
         d["bio"] = k.get("bio", m["bio"])
+        if "photo_credit" in k: d["photo_credit"] = k["photo_credit"]
         d["display"] = f'{k["name_ko"]} {m["name"]}' if k.get("name_ko") else m["name"]
         return d
 
@@ -270,7 +271,7 @@ class Site:
   <div class="profile">
     <div>
       <div class="profile__plate"><img src="{root1}images/makers/{m['photo']}-full.jpg" alt="{E(m['display'])}"></div>
-      <p class="caption">{T['photo_pending'] if m.get('photo_pending') else T['photo_courtesy']}</p>
+      <p class="caption">{T['photo_pending'] if m.get('photo_pending') else m.get('photo_credit', T['photo_courtesy'])}</p>
     </div>
     <div class="profile__body">
       <span class="label">{E(self.kind_label(m['kind']))}</span>
