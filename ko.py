@@ -127,6 +127,16 @@ MAKERS_KO = {
 }
 
 NEWS_KO = {
+    "vsa-competition-2026": {
+        "date_text": "2026년 11월",
+        "title": "박현정·이광훈·유은별, 2026 VSA 콩쿠르에서 수상",
+        "summary": "클리블랜드에서 열린 미국 바이올린 협회(VSA) 제26회 국제 콩쿠르에서 박현정이 비올라 부문 공예(Artisanship) 은메달을, 이광훈과 유은별이 바이올린 부문 공예 우수상(Certificate of Merit)을 받았다.",
+        "body": [
+            "미국 바이올린 협회(Violin Society of America)의 제26회 국제 콩쿠르가 2026년 11월 15일부터 20일까지 오하이오주 클리블랜드에서 열렸다. 2년마다 VSA 총회와 함께 열리는 이 콩쿠르는 북미 최대의 신작 악기·활 콩쿠르로, 음향(tone)과 공예(artisanship) 두 부문을 따로 심사한다.",
+            "K-Lutherie에 소개된 제작자 세 명이 수상했다. 크레모나에서 활동하는 박현정은 비올라 부문 공예 은메달을 받았고, 바이올린 부문에서는 이광훈과 유은별이 각각 공예 우수상(Certificate of Merit for Artisanship)을 받았다.",
+            "전체 결과는 VSA가 공개했다.",
+        ],
+    },
     "cuvee-darling-cremona-2026": {
         "date_text": "2026년 10월",
         "title": "크레모나 퀴베 달링 전시회에 참여한 한국계 제작자 3인",

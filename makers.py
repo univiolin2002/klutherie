@@ -313,6 +313,22 @@ MAKERS = [
 
 NEWS = [
     {
+        "slug": "vsa-competition-2026",
+        "date": "2026-11",
+        "date_text": "November 2026",
+        "title": "Hyunjung Park, Kwanghoon Lee and Stella Eunbyul Yoo recognised at the 2026 VSA Competition",
+        "summary": "At the Violin Society of America’s 26th International Competition in Cleveland, Hyunjung Park took the Silver Medal for Artisanship in the viola section, and Kwanghoon Lee and Stella Eunbyul Yoo each received a Certificate of Merit for Artisanship for violin.",
+        "makers": ["hyunjung-park", "kwanghoon-lee", "stella-eunbyul-yoo"],
+        "body": [
+            "The Violin Society of America held its 26th International Competition in Cleveland, Ohio, from 15 to 20 November 2026. Held every two years alongside the VSA convention, it is the largest competition for new instruments and bows in North America, judged in separate rounds for tone and for artisanship.",
+            "Three makers listed on K-Lutherie were recognised. Hyunjung Park, who works in Cremona, was awarded the Silver Medal for Artisanship in the viola section. In the violin section, Kwanghoon Lee and Stella Eunbyul Yoo each received a Certificate of Merit for Artisanship.",
+            "The full results are published by the VSA.",
+        ],
+        "sources": [
+            ("VSA — 2026 Competition Full Results (PDF)", "https://vsaweb.org/client_media/files/pdf/VSA_Competition_Full_Results_2026.pdf"),
+        ],
+    },
+    {
         "slug": "cuvee-darling-cremona-2026",
         "date": "2026-10",
         "date_text": "October 2026",
